@@ -67,6 +67,7 @@ def print_names():
     print("\n")
     for key, value in cookbook.items():
         print(">", key)
+        value
     print("\n")
 
 #print_names()
