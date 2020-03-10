@@ -6,7 +6,7 @@
 #    By: lboukrou <lboukrou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/24 21:47:45 by lboukrou          #+#    #+#              #
-#    Updated: 2020/02/29 19:31:37 by lboukrou         ###   ########.fr        #
+#    Updated: 2020/03/10 22:16:55 by lboukrou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,16 +63,27 @@ class Book:
 
 	# This one is not finished yet, search about return instance
 	def get_recipe_by_name(self, name):
-		"""Print a recipe with the name 'name' and return the instance """
-		print("allez")
-		# key_recipe = self.recipes_list.get(name)
-		for j in self.recipes_list.keys():
-			# for j in i:
-				if j == name:
-					print(j)
-				# else:
-					# pass
-		print("Hey")
+		for key, value in self.recipes_list.items():
+			for k, v in value.items():
+				if (name == k):
+					print("Recipe for", name, ":")
+					print("Ingredients list:", v.get('ingredients'))
+					print("To be eaten for", v.get('meal'))
+					print("Takes", v.get('prep_time'), "minutes of cooking.\n")
+		# for key in self.recipes_list.items():
+		# 	# print(key)
+		# 	if key == name
+		# 		print(value.get(name))
+		# """Print a recipe with the name 'name' and return the instance """
+		# print("allez")
+		# # key_recipe = self.recipes_list.get(name)
+		# for j in self.recipes_list.keys():
+		# 	# for j in i:
+		# 		if j == name:
+		# 			print(j)
+		# 		# else:
+		# 			# pass
+		# print("Hey")
 		# name_to = key_recipe
 		# print(key_recipe)
 		# print(self.recipes_list.get('starter'))

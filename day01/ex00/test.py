@@ -6,7 +6,7 @@
 #    By: lboukrou <lboukrou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/18 17:55:11 by lboukrou          #+#    #+#              #
-#    Updated: 2020/02/29 18:25:08 by lboukrou         ###   ########.fr        #
+#    Updated: 2020/03/10 22:11:15 by lboukrou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,3 +69,8 @@ for i in cookbook['lunch']:
 print(cookbook)
 # Have to finish 'get_recipe_by_name method'
 nam_recipe_to_print = livre.get_recipe_by_name(veloute)
+
+
+
+print("--------------")
+livre.get_recipe_by_name('veloute')
