@@ -98,7 +98,7 @@ while(choice != 5):
                 meal = str(input())
                 print("Time :")
                 time = int(input())
-                add_recipe(name, ingr, meal, time)
+                add_recipe(name, ingr.split(','), meal, time)
             except:
                 print("Wrong type")
         elif (choice == 2):
@@ -112,7 +112,7 @@ while(choice != 5):
         elif (choice == 4):
             print_names()
         elif (choice == 5):
-            print("Cookbook closed")    
+            print("Cookbook closed")
             pass
         else:
             pass
