@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    vector.py                                          :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lboukrou <lboukrou@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/03/01 19:02:39 by lboukrou          #+#    #+#              #
-#    Updated: 2020/03/04 21:19:36 by lboukrou         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 # Creating Vector class that initializes a vector object in 3 differents way :
 # - a list of floats : Vector([0.0, 1.0, 2.0, 3.0])
 # - a size of Vector(3) --> vector.values = [0.0, 1.0, 2.0]
@@ -104,7 +92,7 @@ class Vector:
 			print("Division only with scalars")
 
 	def __rtruediv__(self, other):
-		if type(other) == int or type(other) == scalars:
+		if type(other) == int:# or type(other) == scalars:
 			print("rsub")
 			add_list = []
 			for i in self.values:
@@ -138,8 +126,8 @@ class Vector:
 			new_vec = Vector(add_list)
 			return (new_vec)
 
-	def __str__(self, other):
+	def __str__(self):
 		pass
 
-	def __repr__(self, other):
+	def __repr__(self):
 		pass

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    book.py                                            :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: leo <leo@student.42.fr>                    +#+  +:+       +#+         #
+#    By: lboukrou <lboukrou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/24 21:47:45 by lboukrou          #+#    #+#              #
-#    Updated: 2020/03/11 10:51:01 by leo              ###   ########.fr        #
+#    Updated: 2020/03/11 11:54:07 by lboukrou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,7 +67,7 @@ class Book:
         for k, v in self.recipes_list.items():
             for i in v:
                 if i.name == name:
-                    print(i)
+                    return (i)
 
         # for key, value in self.recipes_list.items():
             # print("KEY => ", key)

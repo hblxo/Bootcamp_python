@@ -6,7 +6,7 @@
 #    By: lboukrou <lboukrou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/18 17:55:11 by lboukrou          #+#    #+#              #
-#    Updated: 2020/03/10 22:11:15 by lboukrou         ###   ########.fr        #
+#    Updated: 2020/03/11 11:57:46 by lboukrou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,8 +60,8 @@ print(recipes_by_type)
 
 # Example of how to use add_recipe method
 # print(cookbook)
-new_recipe_to_add = livre.add_recipe(ratatouille)
-new_recipe_to_add_2 = livre.add_recipe(sandwich)
+livre.add_recipe(ratatouille)
+livre.add_recipe(sandwich)
 print(livre.last_update)
 
 for i in cookbook['lunch']:
@@ -73,4 +73,4 @@ nam_recipe_to_print = livre.get_recipe_by_name(veloute)
 
 
 print("--------------")
-livre.get_recipe_by_name('veloute')
+print(livre.get_recipe_by_name('veloute'))
