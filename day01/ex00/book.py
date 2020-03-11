@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    book.py                                            :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lboukrou <lboukrou@student.42.fr>          +#+  +:+       +#+         #
+#    By: hbouchet <hbouchet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/24 21:47:45 by lboukrou          #+#    #+#              #
-#    Updated: 2020/03/11 11:54:07 by lboukrou         ###   ########.fr        #
+#    Updated: 2020/03/11 18:39:18 by hbouchet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,6 +65,7 @@ class Book:
     def get_recipe_by_name(self, name):
         print("---recipe by name : ", name, "---")
         for k, v in self.recipes_list.items():
+            k
             for i in v:
                 if i.name == name:
                     return (i)
