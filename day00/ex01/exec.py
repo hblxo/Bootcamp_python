@@ -11,7 +11,6 @@ while (arguments >= position):
     if (arguments > 1 and position < arguments):
         str = str + " "
     position = position + 1
-count1 = 0;
 newstring = ""
 for a in str: 
 # Checking for lowercase letter and converting to uppercase. 
@@ -23,4 +22,3 @@ for a in str:
         newstring+=(a)
 
 print(newstring[::-1])
-

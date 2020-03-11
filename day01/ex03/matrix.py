@@ -1,5 +1,3 @@
-
-
 # Matrix has 2 attributes : 
 # 	- data (list of lists of elements stored in the matrix)
 #	- shape, a Tuple containing dimensions (row, columns)
@@ -11,6 +9,11 @@
 # 	2 - a shape Matrix((3, 3))-> the matrix will be filled by default with zeroes
 # 	3 - the expected elements and shape : Matrix([[0.0, 1.0, 2.0], [3.0, 4.0, 5.0], 
 # [6.0, 7.0, 8.0]],(3, 3))
+
+# Possible improvements : 
+# - Overload some operators
+# - Tests some error case (2 first arg -> tuples)
+
 
 class Matrix:
 	def __init__ (self, *data):
@@ -42,8 +45,7 @@ class Matrix:
 				for i in range (num_list):
 					col = []
 					for j in range (num_elem):
-						j #lint error : variable j unused
-						col.append(0,0)
+						col.append(0.0)
 					self.data.append(col)
 		# """ 3 """
 		elif len(data) == 2:
