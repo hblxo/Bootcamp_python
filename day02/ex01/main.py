@@ -6,7 +6,12 @@ def  what_are_the_vars(*args, **kwargs):
         setattr(obj, 'var_' + str(index) + '', i)
         index += 1
     for k, v in kwargs.items():
-        setattr(obj, k, v)
+        try:
+            getattr(obj, k)
+        except AttributeError:
+            setattr(obj, k, v)
+        else:
+            return None
     return obj
 
 
@@ -37,5 +42,4 @@ if __name__== "__main__":
     obj= what_are_the_vars(12, "Yes", [0, 0, 0], a=10, hello="world")
     doom_printer(obj)
     obj= what_are_the_vars(42, a=10, var_0="world")
-    obj= what_are_the_vars(a=10, var_0="world")
     doom_printer(obj)
