@@ -42,6 +42,7 @@ class Matrix:
 				for i in range (num_list):
 					col = []
 					for j in range (num_elem):
+						j #lint error : variable j unused
 						col.append(0,0)
 					self.data.append(col)
 		# """ 3 """
