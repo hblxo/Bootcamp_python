@@ -48,11 +48,14 @@ class CsvReader():
             with open(self.filename) as my_file:
                 lines_count = (sum(1 for _ in my_file))
             row = 0
+            for i in range(0, self.skip_top - 1):
+                self.file.readline()
             for i in range(self.skip_top, lines_count - self.skip_bottom):
                 line = list(
                     filter(None, self.file.readline().strip().split(self.sep)))
                 if row == 0:
                     row = len(line)
+                # print("row :", row, "- len :", len(line), " == line :", line)
                 assert row == len(line)
                 self.data.append(line)
         except (OSError, IOError) as e:

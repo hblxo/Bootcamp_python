@@ -7,7 +7,8 @@ if __name__ == "__main__":
             print("File is corrupted")
         data = file.getdata()
         header = file.getheader()
-        # print(data)
+        for i in data:
+            print(i)
 
 
 if __name__ == "__main__":
