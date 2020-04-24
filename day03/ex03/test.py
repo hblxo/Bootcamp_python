@@ -9,6 +9,6 @@ print(arr)
 # imp.display(arr)
 
 cl = ColorFilter()
-inv = cl.celluloid(arr)
+inv = cl.to_blue(arr)
 print(inv)
 imp.display(inv)

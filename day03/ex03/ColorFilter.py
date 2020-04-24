@@ -12,8 +12,8 @@ class ColorFilter():
         # creer une nouvelle matrice remplie de 0 de la meme shape que l'array
         new = np.zeros(array.shape)
         # remplit les channels rouge (0) et vert (1) de zeros
-        new[:, :, 0] = np.zeros(array[:, :, 0].shape)
-        new[:, :, 1] = np.zeros(array[:, :, 1].shape)
+        # new[:, :, 0] = np.zeros(array[:, :, 0].shape)
+        # new[:, :, 1] = np.zeros(array[:, :, 1].shape)
         # copie le channel bleu (2) de array vers new
         new[:, :, 2] = array[:, :, 2]
         return new
