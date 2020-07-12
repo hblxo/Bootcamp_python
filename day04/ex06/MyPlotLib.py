@@ -1,6 +1,19 @@
 import pandas as pd
-import matplotlib as mpl
+import matplotlib.pyplot as plt
+from scipy import misc
 
 
 class MyPlotLib(object):
-    pass
+    def __init__(self):
+        pass
+
+    def histogram(self, data, *features):
+        data[list(features)].hist()
+        plt.show()
+
+    def density(self, data, *features):
+        data[list(features)].plot.density()
+        plt.show()
+
+    def pair_plot(self, data, features):
+        pass
